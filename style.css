@@ -1,0 +1,135 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* COLORS and FONTS */
+body {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 3;
+}
+header {
+    background: orangered;
+}
+.main {
+    background: darkslateblue;
+}
+footer {
+    background: deeppink;
+}
+
+.one {
+  display: flex
+  flex-wrap: wrap;
+}
+
+.left-sidebar {
+    background: dodgerblue;
+}
+
+.right-sidebar {
+    background: forestgreen;
+}
+
+.left-sidebar2 {
+    background: forestgreen;
+}
+.right-sidebar2 {
+    background: dodgerblue;
+}
+.left-sidebar3 {
+    background: dodgerblue;
+}
+
+.right-sidebar3 {
+    background: forestgreen;
+}
+.left-sidebar4 {
+    background: forestgreen;
+}
+.right-sidebar4 {
+    background: dodgerblue;
+}
+
+/* flexbox rules for mobile device */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+  flex-direction: column-reverse;
+}
+
+/* felxbox rules for desktop */
+
+@media all and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;    
+    } 
+    
+    header,
+    footer {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .one,
+    .two {
+          width: 100%;
+    }
+  
+    .left-sidebar {
+        order: 1;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar {
+        order: 2;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .left-sidebar2 {
+        order: 3;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar2 {
+        flex: 50%;
+        order: 4;
+        min-height: 80vh;
+    }
+
+    .left-sidebar3 {
+        order: 5;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar3 {
+        flex: 50%;
+        order: 6;
+        min-height: 80vh;
+    }
+
+    .left-sidebar4 {
+        order: 7;
+        flex: 50%;
+        min-height: 80vh;
+    }
+    .right-sidebar4 {
+        flex: 50%;
+        order: 8;
+        min-height: 80vh;
+    }
+
+    footer {
+        order: 9;
+    }
+}
